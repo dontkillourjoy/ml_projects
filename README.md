@@ -1,21 +1,21 @@
 # Machine Learning & AI Applications
 
-This repository showcases projects that implement machine learning and artificial intelligence approaches to solve complex problems across various domains. It includes deep learning models for text-to-text and image-to-text tasks, as well as classical machine learning techniques like Random Forests and Boosting.
+This repository showcases projects that implement machine learning and artificial intelligence approaches to solve complex problems across various domains. It includes deep learning models for text-to-text and image-to-text tasks, as well as classical machine learning techniques like random forests and boosting.
 
 <i>  All projects in this repository were completed in collaboration with Corrà Sara </i>
 
--[Ensemble Learning](#ensemble-learning)
--[Captioning Scientific Figures](#captioning-scientific-figures)
--[Named Entity Recognition](#Named-entity-recognition)
+- [Ensemble Learning](#ensemble-learning)
+- [Captioning Scientific Figures](#captioning-scientific-figures)
+- [Named Entity Recognition](#Named-entity-recognition)
 
 # Ensemble Learning
 
->** Mosquitoes classification: Random Forest and Boosting Application**
+> **Mosquitoes classification: Random Forest and Boosting Application**
 
 The project was inspired by the [WINGBEATS](https://www.kaggle.com/datasets/potamitis/wingbeats) and [ABUZZ](http://web.stanford.edu/group/prakash-lab/cgi-bin/mosquitofreq/the-science/figures-2/) datasets that collect sound **recording of mosquitoes** with the aim of improving the models that identify and **classify** mosquito species. This task is essential for the purposes of disease surveillance and vector control, since mosquito-borne diseases, such as Dengue fever, Zika, Malaria and others, are extremely widespread globally. 
 
 <p align="center">
-  <img src="https://github.com/dontkillourjoy/ml_projects/blob/main/ensemble_learning/wave.png" alt="An example of the time domain representation of the mosquito sound wave" width="500" height = "400"/>
+  <img src="https://github.com/dontkillourjoy/ml_projects/blob/main/ensemble_learning/wave.png" alt="An example of the time domain representation of the mosquito sound wave" width="600" height = "300"/>
   <br/>
   <i>An example of the time domain representation of the mosquito sound wave</i>
 </p>
@@ -25,12 +25,12 @@ The analysis includes a complete pipeline from raw .wav **sound data** processin
 
 # Captioning Scientific Figures
 
->**Deep Neural Network Approach for Captioning Scientific Figures **
+> **Deep Neural Network Approach for Captioning Scientific Figures**
 
-The idea for the [project](https://colab.research.google.com/drive/1eZSwvSL8C2tXADkpvJI9HF5zMuJF9-6O#scrollTo=ek33ZXQojA-i&uniqifier=1) is based on the [HuggingFace challenge](https://huggingface.co/datasets/CrowdAILab/scicap), which aimed at developing a **neural network** approach to **scientific image captioning**. The architecture for the NN implies creating an **image-to-text** pipeline trained, validated and tested on the large-scale figure-captioning dataset **SciCap**. 
+The idea for the [project](https://colab.research.google.com/drive/1eZSwvSL8C2tXADkpvJI9HF5zMuJF9-6O#scrollTo=ek33ZXQojA-i&uniqifier=1) is based on the [HuggingFace challenge](https://huggingface.co/datasets/CrowdAILab/scicap), which aimed at developing a **neural network** approach to **scientific image captioning**. The architecture for the neural network implies creating an **image-to-text** pipeline trained, validated and tested on the large-scale figure-captioning dataset **SciCap**. 
 
 <p align="center">
-  <img src="https://github.com/dontkillourjoy/ml_projects/blob/main/image_captioning/sc_figures.png" alt="Six instances of the SciCap scientific figures and captions" width="500" height = "400"/>
+  <img src="https://github.com/dontkillourjoy/ml_projects/blob/main/image_captioning/sc_figures.png" alt="Six instances of the SciCap scientific figures and captions" width="600" height = "400"/>
   <br/>
   <i>Six instances of the SciCap scientific figures and captions</i>
 </p>
@@ -44,7 +44,7 @@ The [project](https://colab.research.google.com/drive/1GCJQeBvIrcRwxzf9KATYUw72l
 <p align="center">
   <img src="https://github.com/dontkillourjoy/ml_projects/blob/main/nlp_ner/sentences_eg.png" alt="Instances of sentences from GUM corpus, names entities and their distribution" width="500" height = "400"/>
   <br/>
-  <i>[Forest plot for empirical logits](https://github.com/dontkillourjoy/ml_projects/blob/main/nlp_ner/sentences_eg.png)</i>
+  <i>Instances of sentences from GUM corpus, names entities and their distribution</i>
 </p>
 
 To efficiently approach the NER task, the transformer encoder-decoder architecture was used: the Bidirectional Encoder Representations from Transformers (**BERT**) pre-trained on the BooksCorpus and English Wikipedia was used to leverge the concept of transfer learning. This model was fine-tuned on the GUM dataset, with k-fold cross-validation implemented to parameter tuning. For the optimization task, the performance of three PyTorch implementations of optimizers **Adam**, AdamW and **Ranger** was compared, with the Ranger being selected as the optimal. Several **dashboards** were created for better visual representation of both the dataset and the final **evaluation metrics**. The project was completed using the **PyTorch** machine learning library.
