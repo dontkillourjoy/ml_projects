@@ -6,7 +6,7 @@ This repository showcases projects that implement machine learning and artificia
 
 -[Ensemble Learning](#ensemble-learning)
 -[Captioning Scientific Figures](#captioning-scientific-figures)
--[Named Entity Recognition](#Named-entity-recognition)]
+-[Named Entity Recognition](#Named-entity-recognition)
 
 # Ensemble Learning
 
