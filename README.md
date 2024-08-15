@@ -42,7 +42,7 @@ For this research task, an encoder-decoder **CNN + LSTM** architecture was imple
 The [project](https://colab.research.google.com/drive/1GCJQeBvIrcRwxzf9KATYUw72laQ4y2k1) approaches the Named Entity Recognition task in the natural language processing framework. The analysis is based on the **Georgetown University Multilayer** corpus that is oriented towards contemporary English data while meeting the requirements of the corpus and computational linguistics research. The dataset consists of around 22,500 tokens utilising the  **IOB2** format, with **11 entity types** represented. 
 
 <p align="center">
-  <img src="https://github.com/dontkillourjoy/ml_projects/blob/main/nlp_ner/sentences_eg.png" alt="Instances of sentences from GUM corpus, names entities and their distribution" width="500" height = "400"/>
+  <img src="https://github.com/dontkillourjoy/ml_projects/blob/main/nlp_ner/sentences_eg.png" alt="Instances of sentences from GUM corpus, names entities and their distribution" width="700" height = "400"/>
   <br/>
   <i>Instances of sentences from GUM corpus, names entities and their distribution</i>
 </p>
